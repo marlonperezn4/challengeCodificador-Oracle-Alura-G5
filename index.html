@@ -18,24 +18,25 @@
                 <textarea name="iTexto" id="iTexto" cols="30" rows="10" placeholder="Ingrese el texto aquí"></textarea>
             </div>
             <div class="botones">
-                <button type="button" id="btnEncriptar">Encriptar</button>
-                <button type="button" id="btnDesencriptar">Desencriptar</button>
+                <button type="button" id="btnEncriptar" onclick="encriptarTexto()">Encriptar</button>
+                <button type="button" id="btnDesencriptar" onclick="desencriptarTexto()">Desencriptar</button>
             </div>
         </div>
         <!-- Lado derecho -->
         <div class="salida">
-            <div class="mostrar-imagen">
+            <!-- <div class="mostrar-imagen">
                 <img src="img/Muñeco.png" alt="Ningún mensaje fue encontrado">
                 <h2>Ningún mensaje fue encontrado</h2>
                 <p>Ingresa el texto que desees encriptar o desencriptar</p>
-            </div>
-            <!-- <div class="mostrar-texto">
+            </div> -->
+            <div class="mostrar-texto">
                 <textarea name="oTexto" id="oTexto" cols="30" rows="10" readonly></textarea>
             </div>
             <div class="boton">
-                <button type="button" id="btnCopiar">Copiar</button>
-            </div> -->
+                <button type="button" id="btnCopiar" onclick="copiarTexto()">Copiar</button>
+            </div>
         </div>
     </div>
+    <script src="script.js"></script>
 </body>
 </html>
