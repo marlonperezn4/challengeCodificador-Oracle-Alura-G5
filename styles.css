@@ -3,9 +3,9 @@
 }
 
 body{
-    font-family:Verdana;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
     color:#aaaaaa;
-    background-color: #e9ecf8;
+    background-color: #868e96;
     margin: 0;
 }
 .contenedor {
@@ -16,16 +16,17 @@ body{
 .entrada {
     float: left;
     width: 70%;
-    background-color:#a9d3a1;
+    /* background-color:#a9d3a1; */
 }
 
 .logo {
-    background-color:#d3a1a1;
+    padding: 1em 0;
+    /* background-color:#d3a1a1; */
     /* padding:15px; */
 }
 
 .texto {
-    background-color: cadetblue;
+    /* background-color: cadetblue; */
     display: flex;
     align-items: center;
     justify-content: center;
@@ -37,6 +38,9 @@ body{
     outline: none;
     resize: none;
     width: 80%;
+    font-size: 2em;
+    line-height: 1.5;
+    padding: 1em;
 }
 
 .texto textarea:placeholder {
@@ -44,22 +48,52 @@ body{
 }
 
 .botones {
-    background-color: burlywood;
+    /* background-color: burlywood; */
     display: flex;
     align-items: center;
     justify-content: center;
+    padding: 2em 0;
     gap: 5em;
+}
+
+.botones button:first-child, .botones button:last-child {
+    width: 328px;
+    height: 67px;
+    font-size: 1.2em;
+    border-radius: 25px;
+    cursor: pointer;
+}
+
+.botones button:first-child {
+    background-color: #052051;
+    color: white;
+    border: 2px solid #052051;
+}
+
+.botones button:first-child:hover {
+    opacity: 0.8;
+}
+
+.botones button:last-child {
+    background-color: white;
+    color: #052051;
+    border: 2px solid #052051;
+}
+
+.botones button:last-child:hover {
+    background-color: #aab2d5;
+    color: #052051;
 }
 
 /**/
 .salida {
     float: left;
     width: 30%;
-    background-color:#a1bbd3;
+    /* background-color:#a1bbd3; */
 }
 
 .mostrar-texto {
-    background-color:#ced3a1;;
+    /* background-color:#ced3a1;; */
     display: flex;
     align-items: center;
     justify-content: center;
@@ -71,12 +105,33 @@ body{
     outline: none;
     resize: none;
     width: 80%;
+    font-size: 2em;
+    line-height: 1.5;
+    padding: 1em;
 }
+
 
 .boton {
     display: flex;
     align-items: center;
     justify-content: center;
+    padding: 2em 0;
+}
+
+.boton button:first-child {
+    width: 328px;
+    height: 67px;
+    font-size: 1.2em;
+    border-radius: 25px;
+    cursor: pointer;
+    background-color: white;
+    color: #052051;
+    border: 2px solid #052051;
+}
+
+.boton button:first-child:hover {
+    background-color: #aab2d5;
+    color: #052051;
 }
 
 /*=============================================
