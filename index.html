@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encriptador de texto - challenge</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="contenedor">
+        <!-- Lado izquierdo -->
+        <div class="entrada">
+            <div class="logo">
+                <img src="img/Logo.png" alt="logoAlura">
+            </div>
+            <div class="texto">
+                <textarea name="iTexto" id="iTexto" cols="30" rows="10" placeholder="Ingrese el texto aquí"></textarea>
+            </div>
+            <div class="botones">
+                <button type="button" id="btnEncriptar">Encriptar</button>
+                <button type="button" id="btnDesencriptar">Desencriptar</button>
+            </div>
+        </div>
+        <!-- Lado derecho -->
+        <div class="salida">
+            <div class="mostrar-texto">
+                <textarea name="oTexto" id="oTexto" cols="30" rows="10" readonly></textarea>
+            </div>
+            <div class="boton">
+                <button type="button" id="btnCopiar">Copiar</button>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
