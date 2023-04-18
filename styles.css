@@ -94,7 +94,7 @@ body{
     padding-top: 48px;
     display: flex;
     flex-direction: column;
-    background-color:#a1bbd3;
+    /* background-color:#a1bbd3; */
 }
 
 .mostrar-imagen {
@@ -102,16 +102,27 @@ body{
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    height: 90%;
+    margin: 1em;
+    border-radius: 35px;
+    background-color: #ffffff90;
 }
 
 .mostrar-imagen img {
     width: 80%;
-    margin: auto 0;
+    margin: 0;
 }
 
 .mostrar-imagen h2, .mostrar-imagen p {
     font-family: 'Courier New', Courier, monospace;
     text-align: center;
+    font-weight: bold;
+    color: #000;
+}
+
+.mostrar-imagen p {
+    padding: 0 1em;
+    color: #495057;
 }
 
 .mostrar-texto {
@@ -178,6 +189,10 @@ COMPUTADORA
 @media (max-width:1224px) and (min-width:992px){
 
     /**/
+    .entrada {
+        width: 60%;
+    }
+
     .botones button:first-child, .botones button:last-child {
         width: 228px;
         height: 67px;
@@ -187,9 +202,17 @@ COMPUTADORA
     }
 
     /**/
+    .salida {
+        width: 40%;
+    }
+
     .boton button:first-child {
         width: 228px;
         height: 67px;
+    }
+
+    .mostrar-imagen {
+        height: 590px;
     }
 
 }
@@ -232,6 +255,10 @@ TABLET
         height: 100%;
     }
 
+    .mostrar-imagen img {
+        display: none;
+    }
+
 }
 
 /*=============================================
@@ -260,5 +287,9 @@ MÓVIL
             display: flex;
             flex-direction: column;
             gap: 2em;
+        }
+
+        .mostrar-imagen img {
+            display: none;
         }
 }
