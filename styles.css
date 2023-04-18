@@ -13,7 +13,7 @@ body{
     overflow: auto;
 }
 
-/**/
+/* Lado izquierdo */
 .entrada {
     float: left;
     width: 70%;
@@ -87,7 +87,7 @@ body{
     color: #052051;
 }
 
-/**/
+/* Lado derecho */
 .salida {
     float: left;
     width: 30%;

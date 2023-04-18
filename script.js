@@ -1,3 +1,25 @@
+/* Ocultar div del texto */
+var divMostrarTexto = document.getElementById("divMostrarTexto");
+divMostrarTexto.style.display = "none"
+
+/* Función para ocultar imagen */
+
+function ocultarCorrespondiente() {
+
+    var oTexto = document.getElementById("oTexto").value;
+
+    var divMostrarTexto = document.getElementById("divMostrarTexto");
+    var divMostrarImagen = document.getElementById("divMostrarImagen");
+
+    if (oTexto == "") {
+        divMostrarTexto.style.display = "none";
+        divMostrarImagen.style.display = "block";    
+    } else {
+        divMostrarImagen.style.display = "none";
+        divMostrarTexto.style.display = "block";
+    }
+}
+
 /* Función para encriptar */
 
 function encriptarTexto() {
@@ -10,6 +32,7 @@ function encriptarTexto() {
     iTextoEncriptado = iTextoEncriptado.replace(/u/g, 'ufat');
 
     document.getElementById("oTexto").innerHTML = iTextoEncriptado;
+    ocultarCorrespondiente();
 }
 
 /* Función para desencriptar */
@@ -24,6 +47,7 @@ function desencriptarTexto() {
     iTextoDesencriptado = iTextoDesencriptado.replace(/ufat/g, 'u');
 
     document.getElementById("oTexto").innerHTML = iTextoDesencriptado;
+    ocultarCorrespondiente();
 }
 
 /* Función para copiar */
