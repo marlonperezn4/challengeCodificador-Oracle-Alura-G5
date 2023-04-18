@@ -5,7 +5,7 @@
 body{
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     color:#aaaaaa;
-    background-color: #868e96;
+    background-color: #adb5bd;
     margin: 0;
 }
 .contenedor {
@@ -16,7 +16,7 @@ body{
 .entrada {
     float: left;
     width: 70%;
-    /* background-color:#a9d3a1; */
+    background-color:#a9d3a1;
 }
 
 .logo {
@@ -33,7 +33,7 @@ body{
 }
 
 .texto textarea {
-    /* background: none; */
+    background: none;
     border: none;
     outline: none;
     resize: none;
@@ -41,9 +41,10 @@ body{
     font-size: 2em;
     line-height: 1.5;
     padding: 1em;
+    color: #052051;
 }
 
-.texto textarea:placeholder {
+.texto textarea::placeholder {
     color: #072b61;
 }
 
@@ -89,19 +90,24 @@ body{
 .salida {
     float: left;
     width: 30%;
-    /* background-color:#a1bbd3; */
+    padding-top: 48px;
+    display: flex;
+    flex-direction: column;
+    background-color:#a1bbd3;
 }
 
 .mostrar-texto {
-    /* background-color:#ced3a1;; */
+    padding-top: 2em;
+    /* background-color:#ced3a1; */
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
 .mostrar-texto textarea {
-    /* background: none; */
+    /*background: none;*/
     border: none;
+    border-radius: 25px;
     outline: none;
     resize: none;
     width: 80%;
@@ -138,7 +144,7 @@ body{
 COMPUTADORA
 =============================================*/
 
-@media (max-width:1440px) and (min-width:992px){
+@media (max-width:1440px) and (min-width:1225px){
 
     /**/
     .entrada {
@@ -149,6 +155,25 @@ COMPUTADORA
     .salida {
         height: 100vh;
     }
+}
+
+@media (max-width:1224px) and (min-width:992px){
+
+    /**/
+    .botones button:first-child, .botones button:last-child {
+        width: 228px;
+        height: 67px;
+        font-size: 1.2em;
+        border-radius: 25px;
+        cursor: pointer;
+    }
+
+    /**/
+    .boton button:first-child {
+        width: 228px;
+        height: 67px;
+    }
+
 }
 
 /*=============================================
@@ -164,11 +189,27 @@ TABLET
         background-color:#a9d3a1;
     }
 
+    .texto {
+        height: 70vh;
+    }
+
+    .texto textarea {
+        height: 100%;
+    }
+
     /**/
     .salida {
         float: left;
         width: 100%;
         background-color:#a1bbd3;
+    }
+
+    .mostrar-texto {
+        height: 30vh;
+    }
+
+    .mostrar-texto textarea {
+        height: 100%;
     }
 
 }
