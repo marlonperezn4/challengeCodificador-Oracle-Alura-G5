@@ -20,7 +20,7 @@ body{
 }
 
 .logo {
-    background-color:#193a13;
+    background-color:#d3a1a1;
     /* padding:15px; */
 }
 
@@ -77,4 +77,70 @@ body{
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+/*=============================================
+COMPUTADORA
+=============================================*/
+
+@media (max-width:1440px) and (min-width:992px){
+
+    /**/
+    .entrada {
+        height: 100vh;
+    }
+
+    /**/
+    .salida {
+        height: 100vh;
+    }
+}
+
+/*=============================================
+TABLET
+=============================================*/
+
+@media (max-width:991px) and (min-width:768px){
+
+    /**/
+    .entrada {
+        float: left;
+        width: 100%;
+        background-color:#a9d3a1;
+    }
+
+    /**/
+    .salida {
+        float: left;
+        width: 100%;
+        background-color:#a1bbd3;
+    }
+
+}
+
+/*=============================================
+MÓVIL
+=============================================*/
+
+@media (max-width:767px){
+
+        /**/
+        .entrada {
+            float: left;
+            width: 100%;
+            background-color:#a9d3a1;
+        }
+    
+        /**/
+        .salida {
+            float: left;
+            width: 100%;
+            background-color:#a1bbd3;
+        }
+
+        .botones {
+            display: flex;
+            flex-direction: column;
+            gap: 2em;
+        }
 }
