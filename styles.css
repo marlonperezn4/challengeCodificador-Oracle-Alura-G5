@@ -4,8 +4,9 @@
 
 body{
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    color:#aaaaaa;
-    background-color: #adb5bd;
+    color:#052051;
+    /* background-color: #adb5bd; */
+    background: linear-gradient(to right, #a9d3a1 45%, #a1bbd3);
     margin: 0;
 }
 .contenedor {
@@ -16,7 +17,7 @@ body{
 .entrada {
     float: left;
     width: 70%;
-    background-color:#a9d3a1;
+    /* background-color:#a9d3a1; */
 }
 
 .logo {
@@ -94,6 +95,23 @@ body{
     display: flex;
     flex-direction: column;
     background-color:#a1bbd3;
+}
+
+.mostrar-imagen {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.mostrar-imagen img {
+    width: 80%;
+    margin: auto 0;
+}
+
+.mostrar-imagen h2, .mostrar-imagen p {
+    font-family: 'Courier New', Courier, monospace;
+    text-align: center;
 }
 
 .mostrar-texto {
@@ -182,11 +200,14 @@ TABLET
 
 @media (max-width:991px) and (min-width:768px){
 
+    body {
+        background: linear-gradient(#a9d3a1 45%, #a1bbd3);
+    }
+
     /**/
     .entrada {
         float: left;
         width: 100%;
-        background-color:#a9d3a1;
     }
 
     .texto {
@@ -201,7 +222,6 @@ TABLET
     .salida {
         float: left;
         width: 100%;
-        background-color:#a1bbd3;
     }
 
     .mostrar-texto {
@@ -220,18 +240,20 @@ MÓVIL
 
 @media (max-width:767px){
 
+        body {
+            background: linear-gradient(#a9d3a1 45%, #a1bbd3);
+        }
+
         /**/
         .entrada {
             float: left;
             width: 100%;
-            background-color:#a9d3a1;
         }
     
         /**/
         .salida {
             float: left;
             width: 100%;
-            background-color:#a1bbd3;
         }
 
         .botones {
