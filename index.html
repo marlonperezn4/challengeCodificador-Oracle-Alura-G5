@@ -7,15 +7,21 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+    <header>
+        <div class="logo">
+            <img src="img/Logo.png" alt="logoAlura">
+            <img src="img/Logo2.png" alt="logoOne">
+        </div>
+    </header>
     <div class="contenedor">
         <!-- Lado izquierdo -->
         <div class="entrada">
-            <div class="logo">
-                <img src="img/Logo.png" alt="logoAlura">
-                <img src="img/Logo2.png" alt="logoOne">
-            </div>
             <div class="texto">
                 <textarea name="iTexto" id="iTexto" cols="30" rows="10" placeholder="Ingrese el texto aquí"></textarea>
+            </div>
+            <div class="warning">
+                <img src="img/Warning.png" alt="Advertencia" >
+                <p>Solo letras minusculas y sin acento</p>
             </div>
             <div class="botones">
                 <button type="button" id="btnEncriptar" onclick="encriptarTexto()">Encriptar</button>
@@ -31,9 +37,9 @@
             </div>
             <div id="divMostrarTexto" class="mostrar-texto">
                 <textarea name="oTexto" id="oTexto" cols="30" rows="10" readonly></textarea>
-            </div>
-            <div class="boton">
-                <button type="button" id="btnCopiar" onclick="copiarTexto()">Copiar</button>
+                <div class="boton">
+                    <button type="button" id="btnCopiar" onclick="copiarTexto()">Copiar</button>
+                </div>
             </div>
         </div>
     </div>
