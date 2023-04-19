@@ -1,22 +1,21 @@
 /* Ocultar div del texto */
-var divMostrarTexto = document.getElementById("divMostrarTexto");
-divMostrarTexto.style.display = "none"
+const divMostrarTexto = document.querySelector(".mostrar-texto");
+const divMostrarImagen = document.querySelector(".mostrar-imagen");
+
+divMostrarTexto.style.visibility = "collapse";
 
 /* Función para ocultar imagen */
 
 function ocultarCorrespondiente() {
 
-    var oTexto = document.getElementById("oTexto").value;
-
-    var divMostrarTexto = document.getElementById("divMostrarTexto");
-    var divMostrarImagen = document.getElementById("divMostrarImagen");
+    let oTexto = document.getElementById("oTexto").value;
 
     if (oTexto == "") {
-        divMostrarTexto.style.display = "none";
-        divMostrarImagen.style.display = "block";    
+        divMostrarTexto.style.visibility = "collapse";
+        divMostrarImagen.style.visibility = "visible";
     } else {
-        divMostrarImagen.style.display = "none";
-        divMostrarTexto.style.display = "block";
+        divMostrarImagen.style.visibility = "collapse";
+        divMostrarTexto.style.visibility = "visible";
     }
 }
 
