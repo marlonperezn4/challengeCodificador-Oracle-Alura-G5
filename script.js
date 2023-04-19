@@ -1,6 +1,7 @@
 /* Ocultar div del texto */
 const divMostrarTexto = document.querySelector(".mostrar-texto");
 const divMostrarImagen = document.querySelector(".mostrar-imagen");
+const oTexto = document.getElementById("oTexto");
 
 divMostrarTexto.style.visibility = "collapse";
 
@@ -8,14 +9,19 @@ divMostrarTexto.style.visibility = "collapse";
 
 function ocultarCorrespondiente() {
 
-    let oTexto = document.getElementById("oTexto").value;
+    let Texto = document.getElementById("oTexto").value;
 
-    if (oTexto == "") {
+    if (Texto == "") {
         divMostrarTexto.style.visibility = "collapse";
         divMostrarImagen.style.visibility = "visible";
     } else {
-        divMostrarImagen.style.visibility = "collapse";
-        divMostrarTexto.style.visibility = "visible";
+        if(/[A-ZÁÉÍÓÚáéíóú]/.test(Texto)) {
+            alert("El texto contiene mayúsculas o acentos.");
+            return; // interrumpe la ejecución de la función
+          }
+          divMostrarImagen.style.visibility = "collapse";
+          divMostrarTexto.style.visibility = "visible";
+          oTexto.scrollIntoView(); 
     }
 }
 

@@ -210,7 +210,7 @@ body{
 }
 
 .boton button:first-child {
-    width: 70%;
+    width: 40%;
     height: 50px;
     font-size: 1.2em;
     border-radius: 25px;
@@ -223,6 +223,12 @@ body{
 .boton button:first-child:hover {
     background-color: #aab2d5;
     color: #052051;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+    * {
+      scroll-behavior: smooth;
+    }
 }
 
 /*=============================================
@@ -249,7 +255,7 @@ TABLET
 
     .mostrar-texto, .mostrar-imagen {
         margin: 0 2em;
-        height: 30vh;
+        height: 40vh;
     }
 
     .mostrar-imagen img {
@@ -291,6 +297,7 @@ MÓVIL
         }
 
         .mostrar-texto, .mostrar-imagen {
-            height: 30vh;
+            margin: 0 2em;
+            height: 50vh;
         }
 }
