@@ -191,6 +191,7 @@ COMPUTADORA
     /**/
     .entrada {
         width: 60%;
+        height: 100vh;
     }
 
     .botones button:first-child, .botones button:last-child {
@@ -204,6 +205,7 @@ COMPUTADORA
     /**/
     .salida {
         width: 40%;
+        height: 100vh;
     }
 
     .boton button:first-child {
