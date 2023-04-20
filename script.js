@@ -1,6 +1,7 @@
 /* Ocultar div del texto */
 const divMostrarTexto = document.querySelector(".mostrar-texto");
 const divMostrarImagen = document.querySelector(".mostrar-imagen");
+
 const oTexto = document.getElementById("oTexto");
 
 divMostrarTexto.style.visibility = "collapse";
@@ -21,7 +22,7 @@ function ocultarCorrespondiente() {
           }
           divMostrarImagen.style.visibility = "collapse";
           divMostrarTexto.style.visibility = "visible";
-          oTexto.scrollIntoView(); 
+          oTexto.scrollIntoView();
     }
 }
 
