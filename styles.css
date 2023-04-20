@@ -17,6 +17,11 @@ body{
     
 }
 
+.derecha {
+    float: right;
+    margin-right: 2em;
+}
+
 /* Contenedor principal */
 
 .contenedor {
