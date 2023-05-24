@@ -25,7 +25,7 @@ body{
 /* Contenedor principal */
 
 .contenedor {
-    overflow: auto;
+    /* overflow: auto; */
     width: 100%;
     height: calc(100vh - 84px);
     /* background-color: #ce24c5; */
@@ -259,8 +259,12 @@ TABLET
     }
 
     .mostrar-texto, .mostrar-imagen {
-        margin: 0 2em;
         height: 40vh;
+        /* ya tiene por defecto position absolute ahora centraré con: */
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        /* Lo vi en linkedin :) */
     }
 
     .mostrar-imagen img {
@@ -284,25 +288,36 @@ MÓVIL
             float: left;
             width: 100%;
         }
-    
-        /**/
-        .salida {
-            float: left;
-            width: 100%;
-        }
 
         .botones {
             display: flex;
             flex-direction: column;
+            padding: 2em;
             gap: 2em;
         }
 
+        .botones button:first-child, .botones button:last-child {
+            width: 80%;
+            height: 67px;
+        }
+
+        /**/
+        .salida {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 100%;
+        }
+
         .mostrar-imagen img {
+            
             display: none;
         }
 
         .mostrar-texto, .mostrar-imagen {
-            margin: 0 2em;
             height: 50vh;
+            top: 0%;
+            left: 50%;
+            transform: translate(-50%, 0%);
         }
 }
